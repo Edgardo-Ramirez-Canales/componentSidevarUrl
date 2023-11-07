@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white border-white-200">
-      <div className="max-w-screen-xl flex flex-wrap items-center mx-auto p-2">
+      <div className="max-w-screen-xl flex flex-wrap items-center mx-auto p-4">
         <div className="items-center justify-start hidden md:flex w-3/4">
           <div className="flex items-center">
             <Image
@@ -83,16 +83,18 @@ const Navbar = () => {
                 aria-controls="navbar-search"
                 aria-expanded="false"
                 className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
+                //onClick={}
               >
                 <SearchIcon />
                 <span className="sr-only">Search</span>
               </button>
               <button
-                data-collapse-toggle="navbar-search"
                 type="button"
-                className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                data-collapse-toggle="navbar-search"
                 aria-controls="navbar-search"
                 aria-expanded="false"
+                className="md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                //onClick={}
               >
                 <MenuIcon />
               </button>
